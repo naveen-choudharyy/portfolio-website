@@ -599,6 +599,12 @@ nav a:hover{
 
         padding: 30px 20px;
     }
+    .profile img{
+    height: 200px;
+    width: 230px;
+    border-radius: 50%;
+    border: 1px solid #3a3a3a;
+
 
 
     /* Main content */
