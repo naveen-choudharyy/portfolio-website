@@ -1,0 +1,556 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+
+}
+
+body{
+    background-color: #1e1e1e;
+    font-family: sans-serif;
+    color: #a0a0a0;
+    line-height: 1.6;
+
+}
+
+.main-container{
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: 350px 1fr;
+    gap: 40px;
+    padding-top: 80px;
+    margin: auto;
+    align-items: start;
+
+    
+    
+
+
+}
+
+.sidebar{
+    height: 90vh;
+    background-color: #2a2a2a;
+    border: 1px solid #3a3a3a;
+    border-radius: 16px;
+    padding-top: 40px;
+    position: sticky;
+    top: 20px;
+
+
+
+
+   
+}
+
+.main-content{
+    min-height: 90vh;
+    background-color: #2a2a2a;
+    border: 1px solid #3a3a3a;
+    border-radius: 16px;
+
+
+}
+
+/* profile-section */
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile img{
+    height: 200px;
+    width: 230px;
+    border-radius: 50%;
+    border: 1px solid #3a3a3a;
+}
+
+.profile h2{
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-top: 20px;
+    color: #e0e0e0;
+
+}
+
+.profile p{
+    background-color: #1e1e1e;
+    padding: 5px 15px;
+    border: 1px solid #3a3a3a;
+    border-radius: 8%;
+    font-size: 0.8rem;
+    display: inline-block;
+    margin-top: 10px;
+    color: #a78623;
+}
+
+/* contact-section */
+
+.contact{
+    margin-top: 30px;
+    border-top: 1.5px solid #3a3a3a;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 20px;
+
+}
+.label{
+    color: #a0a0a0;
+
+}
+
+.value{
+    color:#e0e0e0;
+    text-decoration: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.phone{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* social-media section */
+.social-media{
+    margin-top: 30px;
+    border-top: 1.5px solid #3a3a3a;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+
+
+}
+
+.github img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #3a3a3a;
+    background-color: #b9b2b2;
+    margin-top: 20px;
+    margin-right: 15px;
+
+}
+.geeksforgeeks img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #3a3a3a;
+    background-color: #c5cfc8;
+    margin-top: 20px;
+    margin-right: 15px;
+}
+
+.leetcode img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #3a3a3a;
+    background-color: #a9a79f;
+    margin-top: 20px;
+}
+
+
+/* main-container */
+
+
+
+/* navigation */
+#navigation{
+    padding: 30px 50px;
+
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+    font-size: 1.1rem;
+    padding-bottom: 18px;
+    border-bottom:1.5px solid #3a3a3a ;
+
+}
+
+nav a{
+    text-decoration: none;
+    color: #a7a5a1;
+    transition: color 0.3 ease;
+}
+
+.active{
+    color:#b99320;
+}
+
+nav a:hover{
+    color:#b99320;
+}
+
+
+/* about me section */
+
+#about h2{
+    margin-left: 25px;
+    font-size: 30px;
+    font-weight: 900;
+    color: #c0bdbd;
+}
+#about p{
+    margin-left:25px;
+    margin-right: 25px;
+}
+
+.line{
+    height: 4px;
+    width: 60px;
+    background-color: #b99320;
+    margin-left: 25px;
+    border-radius: 15%;
+    margin-bottom: 20px;
+}
+
+.content{
+    text-align: justify;
+}
+
+/* skills section */
+
+#skills h2{
+    margin-top: 40px;
+    margin-left: 25px;
+    font-size: 30px;
+    font-weight: 900;
+    color: #c0bdbd;
+
+}
+/* grid container */
+.grid-container{
+    margin-top: 40px;
+    display: flex;
+    margin-left: 40px;
+
+    flex-wrap: wrap;
+
+    gap: 35px;
+}
+
+.item{
+    border: 2px solid #3a3a3a;
+    border-radius: 25%;
+    padding: 20px 20px;
+    text-align: center;
+    transition: transform 0.3 ease;
+
+}
+.item:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 4px 2px;
+}
+.item img{
+
+    height: 70px;
+    width: 70px;
+    background-color: #a78623;
+    border: 2px solid #090909;
+    border-radius: 20%;
+
+
+
+
+}
+.item h3{
+    color: #d7d1d1;
+    font-size: 0.9rem;
+    font-weight: 400;
+
+
+}
+
+
+/* Education section */
+
+/* ================= EDUCATION ================= */
+
+#education h2 {
+    margin-top: 40px;
+    margin-left: 25px;
+    font-size: 30px;
+    font-weight: 900;
+    color: #c0bdbd;
+}
+
+.edu-tech {
+    position: relative;
+    margin-left: 30px;
+    padding-left: 30px;
+}
+
+/* Vertical timeline line */
+.edu-tech::before {
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: 5px;
+    bottom: 5px;
+    width: 2px;
+    background-color: #3a3a3a;
+}
+
+/* Each education item */
+.edu-item {
+    position: relative;
+    padding-bottom: 35px;
+}
+
+/* Yellow circle */
+.design {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #1e1e1e;
+    border: 4px solid #ffbf00;
+    border-radius: 50%;
+
+    left: -30px;
+    top: 3px;
+}
+
+/* Year */
+.year {
+    font-size: 0.9rem;
+    color: #a0a0a0;
+    margin-bottom: 8px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Education title */
+.edu-item h3 {
+    color: #b9b2b2;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+/* College / School */
+.description {
+    font-style: italic;
+    font-weight: 600;
+    color: #a0a0a0;
+    margin-bottom: 10px;
+}
+
+/* Description */
+.work {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+
+/* project section  */
+/* ================= PROJECTS ================= */
+
+#portfolio h2 {
+    margin-top: 40px;
+    margin-left: 25px;
+    font-size: 30px;
+    font-weight: 900;
+    color: #c0bdbd;
+}
+
+
+/* Projects container */
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding: 10px 30px 50px 30px;
+}
+
+
+/* Project card */
+
+.project-card {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+
+    background-color: #252525;
+    border: 1px solid #3a3a3a;
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    transition: transform 0.3s ease,
+                border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+
+/* Hover effect */
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: #b99320;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Project image */
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    min-height: 230px;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.4s ease;
+}
+
+
+/* Image hover */
+
+.project-card:hover .project-image img {
+    transform: scale(1.05);
+}
+
+
+/* Project information */
+
+.project-info {
+    padding: 25px;
+}
+
+
+/* Year */
+
+.project-year {
+    color: #b99320;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+
+/* Project title */
+
+.project-info h3 {
+    color: #e0e0e0;
+    font-size: 1.35rem;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+
+/* Description */
+
+.project-description {
+    color: #a0a0a0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+
+/* Tech stack */
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 22px;
+}
+
+.tech-stack span {
+    padding: 5px 10px;
+
+    background-color: #1e1e1e;
+    border: 1px solid #3a3a3a;
+    border-radius: 6px;
+
+    color: #b9b2b2;
+
+    font-size: 0.75rem;
+}
+
+
+/* Project buttons */
+
+.project-links {
+    display: flex;
+    gap: 12px;
+}
+
+
+/* Common button style */
+
+.project-links a {
+    text-decoration: none;
+
+    padding: 8px 16px;
+
+    border-radius: 7px;
+
+    font-size: 0.85rem;
+    font-weight: 700;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Live demo */
+
+.live-btn {
+    background-color: #b99320;
+    color: #1e1e1e;
+    border: 1px solid #b99320;
+}
+
+.live-btn:hover {
+    background-color: #d0aa2c;
+}
+
+
+/* GitHub */
+
+.github-btn {
+    background-color: transparent;
+    color: #c0bdbd;
+    border: 1px solid #555;
+}
+
+.github-btn:hover {
+    color: #b99320;
+    border-color: #b99320;
+}
+@media (max-width: 768px) {
+
+    .project-card {
+        grid-template-columns: 1fr;
+    }
+
+    .project-image {
+        height: 200px;
+        min-height: 200px;
+    }
+
+    .project-info {
+        padding: 20px;
+    }
+
+    .project-info h3 {
+        font-size: 1.15rem;
+    }
+
+}
